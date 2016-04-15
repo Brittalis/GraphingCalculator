@@ -31,7 +31,7 @@ public class ScientificCalculations
 			log();
 			break;
 		case "factorial":
-			factorial();
+			factorial((int) par1);
 			break;
 		case "power":
 			power();
@@ -110,9 +110,16 @@ public class ScientificCalculations
 
 	}
 
-	static public double factorial()
+	static public double factorial(int memeNumber)
 	{
-		return 0;
+		if (memeNumber == 1)
+		{
+			return 1;
+
+		} else
+		{
+			return par1 * factorial(memeNumber - 1);
+		}
 
 	}
 
