@@ -5,19 +5,71 @@ public class ScientificCalculations
 	static double par1;
 	static double par2;
 
-	public static void main(String[] args)
+	// variables with underscores are cancer but required.
+	public static void main(String operationType_, double par1_, double par2_)
 	{
-		// Here we will choose (based on the parameters) which method to call
+
+		operationType = operationType_;
+		par1 = par1_;
+		par2 = par2_;
 
 		switch (operationType)
 		{
-		case "sin":sin();
-		break;
-		case "cos":cos();
-		break;
-		case "tan":tan();
-		break;
-		
+		case "sin":
+			sin();
+			break;
+		case "cos":
+			cos();
+			break;
+		case "tan":
+			tan();
+			break;
+		case "ln":
+			ln();
+			break;
+		case "log":
+			log();
+			break;
+		case "factorial":
+			factorial();
+			break;
+		case "power":
+			power();
+			break;
+		case "squareRoot":
+			squareRoot();
+			break;
+		case "add":
+			add();
+			break;
+		case "subtract":
+			subtract();
+			break;
+		case "divide":
+			divide();
+			break;
+		case "multiply":
+			multiply();
+			break;
+		case "inverseSin":
+			inverseSin();
+			break;
+		case "inverseCos":
+			inverseCos();
+			break;
+		case "inverseTan":
+			inverseTan();
+			break;
+		case "tenToTheX":
+			tenToTheX();
+			break;
+		case "eToTheX":
+			eToTheX();
+			break;
+		case "sqaured":
+			sqaured();
+			break;
+
 		}
 
 	}
@@ -46,7 +98,7 @@ public class ScientificCalculations
 
 	}
 
-	static 	public double ln()
+	static public double ln()
 	{
 		return Math.log(par1);
 
@@ -70,13 +122,13 @@ public class ScientificCalculations
 
 	}
 
-	static public double sqaureRoot()
+	static public double squareRoot()
 	{
 		return Math.sqrt(par1);
 
 	}
 
-	static 	public double add()
+	static public double add()
 	{
 		return (par1 + par2);
 
@@ -94,13 +146,13 @@ public class ScientificCalculations
 
 	}
 
-	static 	public double multiply()
+	static public double multiply()
 	{
 		return (par1 * par2);
 
 	}
 
-	static 	public double inverseSin()
+	static public double inverseSin()
 	{
 		return Math.asin(par1);
 
