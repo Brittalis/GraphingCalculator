@@ -1,12 +1,24 @@
 
 public class ScientificCalculations
 {
-	String operationType;
-	double variable1;
-	double varieable2;
+	static String operationType;
+	static double par1;
+	static double par2;
 
 	public static void main(String[] args)
 	{
+		// Here we will choose (based on the parameters) which method to call
+
+		switch (operationType)
+		{
+		case "sin":sin();
+		break;
+		case "cos":cos();
+		break;
+		case "tan":tan();
+		break;
+		
+		}
 
 	}
 
@@ -14,113 +26,113 @@ public class ScientificCalculations
 	// operation
 	// second variable
 	// answer
-	// answer become first vareiable and repeat
+	// answer become first variable and repeat
 
-	public double sin()
+	static public double sin()
+	{
+		return Math.sin(par1);
+
+	}
+
+	static public double cos()
+	{
+		return Math.cos(par1);
+
+	}
+
+	static public double tan()
+	{
+		return Math.tan(par1);
+
+	}
+
+	static 	public double ln()
+	{
+		return Math.log(par1);
+
+	}
+
+	static public double log()
+	{
+		return Math.log10(par1);
+
+	}
+
+	static public double factorial()
 	{
 		return 0;
 
 	}
 
-	public double cos()
+	static public double power()
 	{
-		return 0;
+		return Math.pow(par1, par2);
 
 	}
 
-	public double tan()
+	static public double sqaureRoot()
 	{
-		return 0;
+		return Math.sqrt(par1);
 
 	}
 
-	public double ln()
+	static 	public double add()
 	{
-		return 0;
+		return (par1 + par2);
 
 	}
 
-	public double log()
+	static public double subtract()
 	{
-		return 0;
+		return (par1 - par2);
 
 	}
 
-	public double factorial()
+	static public double divide()
 	{
-		return 0;
+		return (par1 / par2);
 
 	}
 
-	public double power()
+	static 	public double multiply()
 	{
-		return 0;
+		return (par1 * par2);
 
 	}
 
-	public double sqaureRoot()
+	static 	public double inverseSin()
 	{
-		return 0;
+		return Math.asin(par1);
 
 	}
 
-	public double add()
+	static public double inverseCos()
 	{
-		return 0;
+		return Math.acos(par1);
 
 	}
 
-	public double subtract()
+	static public double inverseTan()
 	{
-		return 0;
+		return Math.atan(par1);
 
 	}
 
-	public double divide()
+	static public double tenToTheX()
 	{
-		return 0;
+		return Math.pow(10, par1);
 
 	}
 
-	public double multiply()
+	static public double eToTheX()
 	{
-		return 0;
+		return Math.pow(Math.E, par1);
 
 	}
 
-	public double inverseSin()
+	static public double sqaured()
 	{
-		return 0;
-
-	}
-
-	public double inverseCos()
-	{
-		return 0;
-
-	}
-
-	public double inverseTan()
-	{
-		return 0;
-
-	}
-
-	public double tenToTheX()
-	{
-		return 0;
-
-	}
-
-	public double eToTheX()
-	{
-		return 0;
-
-	}
-
-	public double sqaured()
-	{
-		return 0;
+		return Math.pow(par1, 2);
 
 	}
 
