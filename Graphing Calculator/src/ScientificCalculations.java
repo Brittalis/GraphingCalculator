@@ -1,76 +1,52 @@
 
 public class ScientificCalculations
 {
-	static String operationType;
-	static double par1;
-	static double par2;
 
-	// variables with underscores are cancer but required.
-	public static void main(String operationType_, double par1_, double par2_)
+	public static double evalaute(String operationType, double par1,
+			double par2)
 	{
-
-		operationType = operationType_;
-		par1 = par1_;
-		par2 = par2_;
 
 		switch (operationType)
 		{
 		case "sin":
-			sin();
-			break;
+			return sin(par1);
 		case "cos":
-			cos();
-			break;
+			return cos(par1);
 		case "tan":
-			tan();
-			break;
+			return tan(par1);
 		case "ln":
-			ln();
-			break;
+			return ln(par1);
 		case "log":
-			log();
-			break;
+			return log(par1);
 		case "factorial":
-			factorial((int) par1);
-			break;
+			// return factorial((int) par1);
 		case "power":
-			power();
-			break;
+			return power(par1, par2);
 		case "squareRoot":
-			squareRoot();
-			break;
+			return squareRoot(par1);
 		case "add":
-			add();
-			break;
+			return add(par1, par2);
 		case "subtract":
-			subtract();
-			break;
+			return subtract(par1, par2);
 		case "divide":
-			divide();
-			break;
+			return divide(par1, par2);
 		case "multiply":
-			multiply();
-			break;
+			return multiply(par1, par2);
 		case "inverseSin":
-			inverseSin();
-			break;
+			return inverseSin(par1);
 		case "inverseCos":
-			inverseCos();
-			break;
+			return inverseCos(par1);
 		case "inverseTan":
-			inverseTan();
-			break;
+			return inverseTan(par1);
 		case "tenToTheX":
-			tenToTheX();
-			break;
+			return tenToTheX(par1);
 		case "eToTheX":
-			eToTheX();
-			break;
+			return eToTheX(par1);
 		case "sqaured":
-			sqaured();
-			break;
-
+			return sqaured(par1);
 		}
+		System.err.println("operation type unrecognized");
+		return 0;
 
 	}
 
@@ -80,116 +56,111 @@ public class ScientificCalculations
 	// answer
 	// answer become first variable and repeat
 
-	static public double sin()
+	static public double sin(double par1)
 	{
 		return Math.sin(par1);
 
 	}
 
-	static public double cos()
+	static public double cos(double par1)
 	{
 		return Math.cos(par1);
 
 	}
 
-	static public double tan()
+	static public double tan(double par1)
 	{
 		return Math.tan(par1);
 
 	}
 
-	static public double ln()
+	static public double ln(double par1)
 	{
 		return Math.log(par1);
 
 	}
 
-	static public double log()
+	static public double log(double par1)
 	{
 		return Math.log10(par1);
 
 	}
 
-	static public double factorial(int memeNumber)
-	{
-		if (memeNumber == 1)
-		{
-			return 1;
+	/*
+	 * static public double factorial(int par1) { if (par1 == 1) { return 1;
+	 * 
+	 * } else { return par1 * factorial(par1 - 1); }
+	 * 
+	 * }
+	 */
 
-		} else
-		{
-			return par1 * factorial(memeNumber - 1);
-		}
-
-	}
-
-	static public double power()
+	static public double power(double par1, double par2)
 	{
 		return Math.pow(par1, par2);
 
 	}
 
-	static public double squareRoot()
+	static public double squareRoot(double par1)
 	{
 		return Math.sqrt(par1);
 
 	}
 
-	static public double add()
+	static public double add(double par1, double par2)
 	{
 		return (par1 + par2);
 
 	}
 
-	static public double subtract()
+	static public double subtract(double par1, double par2)
 	{
 		return (par1 - par2);
 
 	}
 
-	static public double divide()
+	static public double divide(double par1, double par2)
 	{
 		return (par1 / par2);
 
 	}
 
-	static public double multiply()
+	static public double multiply(double par1, double par2)
 	{
 		return (par1 * par2);
 
 	}
 
-	static public double inverseSin()
+	static public double inverseSin(double par1)
 	{
 		return Math.asin(par1);
 
 	}
 
-	static public double inverseCos()
+	static public double inverseCos(double par1)
 	{
 		return Math.acos(par1);
 
 	}
 
-	static public double inverseTan()
+	static public double inverseTan(double par1)
 	{
 		return Math.atan(par1);
 
 	}
 
-	static public double tenToTheX()
+	static public double tenToTheX(double par1)
 	{
 		return Math.pow(10, par1);
 
 	}
 
-	static public double eToTheX()
+	static public double eToTheX(double par1)
 	{
 		return Math.pow(Math.E, par1);
 
 	}
 
-	static public double sqaured()
+	static public double sqaured(double par1)
 	{
 		return Math.pow(par1, 2);
 
