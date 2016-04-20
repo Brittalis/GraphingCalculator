@@ -1,3 +1,4 @@
+package src;
 
 public class ScientificCalculations
 {
@@ -19,7 +20,7 @@ public class ScientificCalculations
 		case "log":
 			return log(par1);
 		case "factorial":
-			// return factorial((int) par1);
+			   return factorial((int) par1);
 		case "power":
 			return power(par1, par2);
 		case "squareRoot":
@@ -86,13 +87,16 @@ public class ScientificCalculations
 
 	}
 
-	/*
-	 * static public double factorial(int par1) { if (par1 == 1) { return 1;
-	 * 
-	 * } else { return par1 * factorial(par1 - 1); }
-	 * 
-	 * }
-	 */
+	static public double factorial(int par1) { 
+		
+		if (par1 == 1) {
+			return 1;
+		} 
+		else {
+			return par1 * factorial(par1 - 1); 
+		}
+
+	}
 
 	static public double power(double par1, double par2)
 	{
